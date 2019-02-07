@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a0572d53cab84ffa56a2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e4829c0261d1cabe1cf6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -14057,7 +14057,7 @@ exports = module.exports = __webpack_require__(25)();
 
 
 // module
-exports.push([module.i, "/* This file should be reviewed. It's not optimal, but it works for now. */\n.navbar {\n    display: list-item;\n}\n\n/* Highlighting rules for nav menu items */\n.nav-item a.active,\n.nav-item a.active:hover,\n.nav-item a.active:focus {\n    background-color: #4189C7;\n    color: white;\n    text-decoration: underline;\n}\n\n.nav-item a,\n.nav-item a:hover,\n.nav-item a:focus {\n    color: white;\n}\n\n/* Keep the nav menu independent of scrolling and on top of other items */\n.main-nav {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    z-index: 1;\n}\n\n@media (max-width: 767px) {\n    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */\n    body {\n        padding-top: 50px;\n    }\n}\n\n@media (min-width: 768px) {\n    /* On small screens, convert the nav menu to a vertical sidebar */\n    .main-nav {\n        height: 100%;\n        width: calc(25% - 20px);\n    }    \n    .main-nav .navbar {\n        border-radius: 0px;\n        border-width: 0px;\n        height: 100%;\n    }\n    .navbar-expand-md .navbar-nav {\n        flex-direction: column;\n    }\n    .navbar-header {\n        float: none;\n    }\n    .navbar-collapse {\n        border-top: 1px solid #444;\n        padding: 0px;\n    }\n    .navbar-collapse ul {\n        float: none;\n    }\n    .nav-item {\n        float: none;\n        font-size: 15px;\n        margin: 6px;\n    }\n    .nav-item a {\n        padding: 10px 16px;\n        border-radius: 4px;\n        color: white;\n    }\n    \n    .navbar a {\n        /* If a menu item's text is too long, truncate it */\n        width: 95%; /* Bug to fix here. Width 100% overflow. */\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n    }\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -14071,7 +14071,7 @@ exports = module.exports = __webpack_require__(25)();
 
 
 // module
-exports.push([module.i, "\n.slide-enter-active[data-v-9e22a3aa], .slide-leave-active[data-v-9e22a3aa] {\ntransition: max-height .35s\n}\n.slide-enter[data-v-9e22a3aa], .slide-leave-to[data-v-9e22a3aa] {\nmax-height: 0px;\n}\n.slide-enter-to[data-v-9e22a3aa], .slide-leave[data-v-9e22a3aa] {\nmax-height: 20em;\n}\n", "", {"version":3,"sources":["/Users/ondergenc/Documents/EstimatesLeague/src/EstimatesLeague.Web/ClientApp/components/ClientApp/components/nav-menu.vue"],"names":[],"mappings":";AA6CA;AACA,2BAAA;CACA;AACA;AACA,gBAAA;CACA;AAEA;AACA,iBAAA;CACA","file":"nav-menu.vue","sourcesContent":["<template>\n    <div class=\"main-nav\">\n        <nav class=\"navbar navbar-expand-md navbar-dark bg-dark\">\n            <button class=\"navbar-toggler\" type=\"button\" @click=\"toggleCollapsed\">\n                <span class=\"navbar-toggler-icon\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <router-link class=\"navbar-brand\" to=\"/\"><icon :icon=\"['fab', 'microsoft']\"/> ASP.NET Core with Vue.js 2</router-link>\n\n            <transition name=\"slide\">\n                <div :class=\"'collapse navbar-collapse' + (!collapsed ? ' show':'')\" v-show=\"!collapsed\">\n                    <ul class=\"navbar-nav mr-auto\">\n                        <li class=\"nav-item\" v-for=\"(route, index) in routes\" :key=\"index\">\n                            <router-link :to=\"route.path\" exact-active-class=\"active\">\n                                <icon :icon=\"route.icon\" class=\"mr-2\" /><span>{{ route.display }}</span> \n                            </router-link>\n                        </li>\n                    </ul>\n                </div>\n            </transition>\n        </nav>\n    </div>\n</template>\n\n<script>\n    import { routes } from '../router/routes'\n\n    export default {\n      data () {\n        return {\n          routes,\n          collapsed: true\n        }\n      },\n      methods: {\n        toggleCollapsed: function (event) {\n          this.collapsed = !this.collapsed\n        }\n      }\n    }\n</script>\n\n<style scoped>\n    .slide-enter-active, .slide-leave-active {\n    transition: max-height .35s\n    }\n    .slide-enter, .slide-leave-to {\n    max-height: 0px;\n    }\n\n    .slide-enter-to, .slide-leave {\n    max-height: 20em;\n    }\n</style>"],"sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"nav-menu.vue","sourceRoot":""}]);
 
 // exports
 
@@ -14085,7 +14085,7 @@ exports = module.exports = __webpack_require__(25)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"app-root.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"app-root.vue","sourceRoot":""}]);
 
 // exports
 
@@ -14127,7 +14127,7 @@ exports = module.exports = __webpack_require__(25)();
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home-page.vue","sourceRoot":""}]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"home-page.vue","sourceRoot":""}]);
 
 // exports
 
@@ -16204,11 +16204,7 @@ exports.default = {
     };
   },
 
-  methods: {
-    toggleCollapsed: function toggleCollapsed(event) {
-      this.collapsed = !this.collapsed;
-    }
-  }
+  methods: {}
 };
 
 /***/ }),
@@ -23044,207 +23040,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("h1", [_vm._v("Hello, Estimates League!")]),
-    _vm._v(" "),
-    _c("p", [
-      _vm._v("Welcome to your new single-page application, built with: ")
-    ]),
-    _vm._v(" "),
-    _c("ul", [
-      _c("li", [
-        _c(
-          "a",
-          { attrs: { href: "https://get.asp.net/" } },
-          [
-            _c("icon", { attrs: { icon: ["fab", "microsoft"] } }),
-            _vm._v(" ASP.NET Core")
-          ],
-          1
-        ),
-        _vm._v(" and "),
-        _c(
-          "a",
-          {
-            attrs: {
-              href: "https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx"
-            }
-          },
-          [_vm._v("C#")]
-        ),
-        _vm._v("                    for cross-platform server-side code")
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c(
-          "a",
-          { attrs: { href: "https://vuejs.org/" } },
-          [
-            _c("icon", { attrs: { icon: ["fab", "vuejs"] } }),
-            _vm._v(" Vue.js")
-          ],
-          1
-        ),
-        _vm._v(" for client-side code")
-      ]),
-      _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _c("li", [
-        _c(
-          "a",
-          { attrs: { href: "https://fontawesome.com" } },
-          [
-            _c("icon", { attrs: { icon: ["fab", "font-awesome"] } }),
-            _vm._v(" Font Awesome")
-          ],
-          1
-        ),
-        _vm._v(" (Free) for the icons")
-      ]),
-      _vm._v(" "),
-      _vm._m(3)
-    ]),
-    _vm._v(" "),
-    _c("p", [_vm._v("To help you get started, we've also set up:")]),
-    _vm._v(" "),
-    _vm._m(4),
-    _vm._v(" "),
-    _c("br"),
-    _c("br"),
-    _vm._v(" "),
-    _vm._m(5),
-    _vm._v(" "),
-    _c("strong", [_vm._v("Consulting | Development | Training | Workshops")]),
-    _c("br"),
-    _vm._v(" "),
-    _c("p", [
-      _vm._v(
-        "Get your Team or Application up to speed by working with some of the leading industry experts in JavaScript & ASP.NET!"
-      )
-    ]),
-    _vm._v(" "),
-    _c("strong", [_vm._v("Contact us today: ")]),
-    _vm._v(" "),
-    _c("p", [
-      _c(
-        "a",
-        { attrs: { href: "mailto:hello@devhelp.online" } },
-        [
-          _c("icon", { attrs: { icon: "envelope" } }),
-          _vm._v(" Hello@DevHelp.Online")
-        ],
-        1
-      )
-    ])
-  ])
+  return _c("div", [_vm._v("Hello Estimates League! ")])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "https://webpack.js.org/" } }, [
-        _vm._v("Webpack")
-      ]),
-      _vm._v(" for building and bundling client-side resources")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "http://getbootstrap.com/" } }, [
-        _vm._v("Bootstrap")
-      ]),
-      _vm._v(" for layout and styling")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "http://jquery.com/" } }, [_vm._v("JQuery")]),
-      _vm._v(" for Bootstrap components")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", [
-      _c("a", { attrs: { href: "api/SampleData/WeatherForecasts" } }, [
-        _vm._v("API sample data")
-      ]),
-      _vm._v(" from the dotnet controller")
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", [
-      _c("li", [
-        _c("strong", [_vm._v("Client-side navigation")]),
-        _vm._v(". For example, click "),
-        _c("em", [_vm._v("Counter")]),
-        _vm._v(" then "),
-        _c("em", [_vm._v("Back")]),
-        _vm._v(" to return\n            here.")
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("strong", [_vm._v("Webpack dev middleware")]),
-        _vm._v(". In development mode, there's no need to run the "),
-        _c("code", [_vm._v("webpack")]),
-        _vm._v(
-          "                    build tool. Your client-side resources are dynamically built on demand. Updates are available as soon\n            as you modify any file."
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("strong", [_vm._v("Hot module replacement")]),
-        _vm._v(
-          ". In development mode, you don't even need to reload the page after\n            making most changes. Within seconds of saving changes to files, your Vue.js app will be rebuilt and\n            a new instance injected is into the page."
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("strong", [_vm._v("Code splitting and lazy loading")]),
-        _vm._v(
-          ". Vue.js components may optionally be bundled individually and\n            loaded on demand. For example, the code and template for 'Counter' is not loaded until you navigate to\n            it.."
-        )
-      ]),
-      _vm._v(" "),
-      _c("li", [
-        _c("strong", [_vm._v("Efficient production builds")]),
-        _vm._v(
-          ". In production mode, development-time features are disabled,\n            and the "
-        ),
-        _c("code", [_vm._v("webpack")]),
-        _vm._v(" build tool produces minified static CSS and JavaScript files.")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("h2", [
-      _vm._v("This Template brought to you by "),
-      _c("a", { attrs: { href: "http://DevHelp.Online" } }, [
-        _vm._v("DevHelp.Online")
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 if (true) {
@@ -23507,18 +23305,23 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container-fluid", attrs: { id: "app" } }, [
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-md-3" },
-        [_c("nav-menu", { attrs: { params: "route: route" } })],
-        1
-      ),
+  return _c(
+    "div",
+    { staticClass: "layout-container", attrs: { id: "app" } },
+    [
+      _c("nav-menu", { attrs: { params: "route: route" } }),
       _vm._v(" "),
-      _c("div", { staticClass: "col-sm-9" }, [_c("router-view")], 1)
-    ])
-  ])
+      _c("div", { staticClass: "layout-content" }, [
+        _c(
+          "div",
+          { staticClass: "container-fluid flex-grow-1 container-p-y" },
+          [_c("router-view")],
+          1
+        )
+      ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -23541,93 +23344,44 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "main-nav" }, [
-    _c(
-      "nav",
-      { staticClass: "navbar navbar-expand-md navbar-dark bg-dark" },
-      [
-        _c(
-          "button",
-          {
-            staticClass: "navbar-toggler",
-            attrs: { type: "button" },
-            on: { click: _vm.toggleCollapsed }
-          },
-          [
-            _c("span", { staticClass: "navbar-toggler-icon" }),
-            _vm._v(" "),
-            _c("span", { staticClass: "icon-bar" }),
-            _vm._v(" "),
-            _c("span", { staticClass: "icon-bar" }),
-            _vm._v(" "),
-            _c("span", { staticClass: "icon-bar" })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "router-link",
-          { staticClass: "navbar-brand", attrs: { to: "/" } },
-          [
-            _c("icon", { attrs: { icon: ["fab", "microsoft"] } }),
-            _vm._v(" ASP.NET Core with Vue.js 2")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("transition", { attrs: { name: "slide" } }, [
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: !_vm.collapsed,
-                  expression: "!collapsed"
-                }
-              ],
-              class:
-                "collapse navbar-collapse" + (!_vm.collapsed ? " show" : "")
-            },
+  return _c(
+    "div",
+    {
+      staticClass: "sidenav sidenav-vertical layout-sidenav bg-sidenav-theme",
+      attrs: { id: "layout-sidenav" }
+    },
+    [
+      _c(
+        "ul",
+        { staticClass: "sidenav-inner py-1" },
+        _vm._l(_vm.routes, function(route, index) {
+          return _c(
+            "li",
+            { key: index, staticClass: "sidenav-item" },
             [
               _c(
-                "ul",
-                { staticClass: "navbar-nav mr-auto" },
-                _vm._l(_vm.routes, function(route, index) {
-                  return _c(
-                    "li",
-                    { key: index, staticClass: "nav-item" },
-                    [
-                      _c(
-                        "router-link",
-                        {
-                          attrs: {
-                            to: route.path,
-                            "exact-active-class": "active"
-                          }
-                        },
-                        [
-                          _c("icon", {
-                            staticClass: "mr-2",
-                            attrs: { icon: route.icon }
-                          }),
-                          _c("span", [_vm._v(_vm._s(route.display))])
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                }),
-                0
+                "router-link",
+                {
+                  staticClass: "sidenav-link",
+                  attrs: { to: route.path, "exact-active-class": "active" }
+                },
+                [
+                  _c("icon", {
+                    staticClass: "mr-2",
+                    attrs: { icon: route.icon }
+                  }),
+                  _c("span", [_vm._v(_vm._s(route.display))])
+                ],
+                1
               )
-            ]
+            ],
+            1
           )
-        ])
-      ],
-      1
-    )
-  ])
+        }),
+        0
+      )
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
