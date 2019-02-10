@@ -16,25 +16,25 @@
 
     <!-- Icons. Uncomment required icon fonts -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css"> -->
-    <link rel="stylesheet" href="assets/vendor/fonts/ionicons.css">
+    <link rel="stylesheet" href="~/assets/vendor/fonts/ionicons.css">
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/linearicons.css"> -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/open-iconic.css"> -->
     <!-- <link rel="stylesheet" href="assets/vendor/fonts/pe-icon-7-stroke.css"> -->
 
     <!-- Core stylesheets -->
-    <link rel="stylesheet" href="assets/vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/vendor/css/appwork.css">
-    <link rel="stylesheet" href="assets/vendor/css/theme-corporate.css" type="text/css" class="theme-settings-theme-css">
-    <link rel="stylesheet" href="assets/vendor/css/colors.css">
-    <link rel="stylesheet" href="assets/vendor/css/uikit.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/appwork.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/theme-corporate.css" type="text/css" class="theme-settings-theme-css">
+    <link rel="stylesheet" href="~/assets/vendor/css/colors.css">
+    <link rel="stylesheet" href="~/assets/vendor/css/uikit.css">
 
     <!-- Layout helpers -->
-    <script src="assets/vendor/js/layout-helpers.js"></script>
+    <script src="~/assets/vendor/js/layout-helpers.js"></script>
 
     <!-- Libs -->
 
     <!-- `perfect-scrollbar` library required by SideNav plugin -->
-    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css">
     <!-- from html -->
 
     <environment names="Staging,Production">
@@ -74,9 +74,9 @@
       </nav>
       <!-- / Layout navbar -->
 
-      <div class="layout-container">
+      <!-- <div class="layout-container"> -->
           @RenderBody()
-      </div>
+      <!-- </div> -->
 
     </div>
     <!-- Layout inner -->
@@ -91,18 +91,18 @@
 <!-- from html -->
     <!-- Core scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/vendor/libs/popper/popper.js"></script>
-    <script src="assets/vendor/js/bootstrap.js"></script>
-    <script src="assets/vendor/js/sidenav.js"></script>
+    <script src="~/assets/vendor/libs/popper/popper.js"></script>
+    <script src="~/assets/vendor/js/bootstrap.js"></script>
+    <script src="~/assets/vendor/js/sidenav.js"></script>
 
     <!-- Libs -->
 
     <!-- `perfect-scrollbar` library required by SideNav plugin -->
-    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
 
     <!-- Main script -->
 
-    <script src="assets/js/main.js"></script>
+    <script src="~/assets/js/main.js"></script>
 <!-- from html -->
     @RenderSection("scripts", required: false)
 </body>
