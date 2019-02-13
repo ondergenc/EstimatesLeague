@@ -11,5 +11,8 @@ namespace EstimatesLeague.Entity
         public ELDContext(DbContextOptions options) : base(options)
         {
         }
+
+        public DbSet<ELDLeague> Leagues { get; set; }
+        public DbSet<ELDUserLeague> UserLeagues { get; set; }
     }
 }
